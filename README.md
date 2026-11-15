@@ -2,6 +2,10 @@
 
 > COM 口打不开、报"拒绝访问"、又看不出是谁占着它？这个工具帮你指出来，并且一键抢回来。**不用重启电脑，不用拔 USB 线。**
 
+[![release](https://img.shields.io/github/v/release/zhangheng1988/serial-port-releaser?label=%E4%B8%8B%E8%BD%BD&color=2ea44f)](https://github.com/zhangheng1988/serial-port-releaser/releases/latest)
+[![license](https://img.shields.io/github/license/zhangheng1988/serial-port-releaser)](LICENSE)
+[![python](https://img.shields.io/badge/python-3.8%2B%20%C2%B7%20stdlib%20only-blue)](serial_release.py)
+
 ![preview](docs/preview.png)
 
 串口调试最烦的一幕：上一个程序崩了或者忘了关，`COM6` 打不开。设备管理器只告诉你"这个端口存在"，任务管理器里一堆同名进程，谁也看不出到底是谁捏着那个串口不放。
@@ -75,7 +79,7 @@ DuplicateHandle(hProc, 旧句柄, 本进程, &新句柄, 0, False, DUPLICATE_CLO
 
 ### 方式一：下载现成的 EXE
 
-到 [Releases](../../releases) 下载 `串口释放助手.exe`，双击运行。
+到 [Releases](https://github.com/zhangheng1988/serial-port-releaser/releases/latest) 下载 **`SerialPortReleaser.exe`**，双击运行（窗口标题是「串口释放助手 v2.0」，解压/下载时若被浏览器重命名不影响使用）。
 
 - 对高权限进程（服务、以管理员身份运行的程序）动手时，请右键 → **以管理员身份运行**
 - 界面里红色 = 被占用，绿色 = 空闲；选中后点「强制断开选中的口」或直接双击
